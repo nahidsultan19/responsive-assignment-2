@@ -74,6 +74,17 @@ nav{
     transition: transform 2s ease-in-out;
 }
 
+/* ------------------------companies logo------------------------  */
+.companies{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.company img{
+    padding: 0 15px;
+}
+
 /* --------------------product gallary---------------------- */
 .section-title{
     text-align: center;
@@ -196,7 +207,7 @@ footer{
     .navbar{
         display: none;
     }
-    /* influencer section  */
+    /*---------------------- influencer section -------------------------- */
     .similar-width{
         width: 80%;
     }
@@ -205,6 +216,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        margin-top: 20px;
 
     }
     .influencer-content{
@@ -217,13 +229,27 @@ footer{
     .influencer-banner img{
         width: 202px;
     }
-    /* product collection */
+    /* ----------------------------- companies logo ------------------------ */
+    .companies{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    
+    /*--------------------- product gallary ----------------------------- */
+    .products-gallary{
+        margin: 0;
+    }
+    .section-title{
+        margin: 0;
+        padding-bottom: 40px;
+    }
     .products{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 20px;
     }
-    /* featured section  */
+    /* ----------------------------- featured section------------------------------------ */
     .featured{
         display: flex;
         flex-direction: column;
@@ -231,7 +257,6 @@ footer{
     }
     #video{
         width: 100%;
-        /* padding-right: 30px; */
     }
     .influence-guide{
         text-align: center;
@@ -251,10 +276,14 @@ footer{
         order: 2;
     }
 
-    /* footer section  */
+    /* --------------------------- footer section ------------------------- */
     footer{
         padding-bottom: 20px;
     }
+    .container {
+        margin: 50px 0;
+    }
+    
    
 }
 
@@ -263,12 +292,18 @@ footer{
     /* header{
         width: 100%;
     } */
+    .container{
+        margin: 0;
+    }
+    .influencer{
+        padding-top: 30px;
+    }
     .link-btn{
         display: inline-block;
         font-size: 23px;
     }
     .influencer-content h3{
-        font-size: 30px;
+        font-size: 20px;
     } 
     .influencer-content p{
         font-size: 20px;
@@ -276,6 +311,13 @@ footer{
     }
     .influence-img{
         width: 300px;
+    }
+    /* companies */
+    .companies{
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+
     }
     /*------------------------ products gallary --------------------- */
     .products{
